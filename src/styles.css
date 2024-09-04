@@ -2094,3 +2094,19 @@ ul {
   background-color: #e03a3c !important;
   border: none !important;
 }
+
+.dropdown-toggle::after {
+  display:none;
+}
+
+.navbar a, .navbar a:focus {
+  padding: 10px !important;
+}
+
+.logo-mobile {
+  font-size: 20px !important;
+}
+
+.dropdown-item.active {
+  background-color: transparent !important
+}

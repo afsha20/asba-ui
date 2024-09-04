@@ -15,6 +15,7 @@ import { ServiceModalComponent } from './components/service-modal/service-modal.
   providers: [NgbCarouselConfig]
 })
 export class AppComponent implements OnInit, AfterViewInit {
+  tab: string = 'hero';
   ngOnInit(): void {
     AOS.init();
     new PureCounter();
@@ -105,15 +106,15 @@ export class AppComponent implements OnInit, AfterViewInit {
 		modalRef.componentInstance.type = type;
 	}
 
-	private getDismissReason(reason: any): string {
-		switch (reason) {
-			case ModalDismissReasons.ESC:
-				return 'by pressing ESC';
-			case ModalDismissReasons.BACKDROP_CLICK:
-				return 'by clicking on a backdrop';
-			default:
-				return `with: ${reason}`;
-		}
-	}
+  isMobile() {
+    const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+    return regex.test(navigator.userAgent);
+  }
+
+  changeTab(tab: string) {
+    this.tab = tab
+  }
+
+  
  
 }

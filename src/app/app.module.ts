@@ -1,6 +1,6 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselModule, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +14,8 @@ import { ServiceModalComponent } from './components/service-modal/service-modal.
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbCarouselModule
+    NgbCarouselModule,
+    NgbDropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent],
