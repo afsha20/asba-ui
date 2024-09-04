@@ -1,0 +1,25 @@
+<div class="modal-header">
+  <h4 class="modal-title">{{ serviceMap.get(type)?.head }}</h4>
+  <!-- <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button> -->
+</div>
+<div class="modal-body">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-7">
+        <img src="{{ serviceMap.get(type)?.image }}" class="img-fluid" />
+      </div>
+      <div class="col-5 text-start">
+        {{ serviceMap.get(type)?.body }}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <button
+    type="button"
+    class="btn btn-primary"
+    (click)="activeModal.close('Close click')"
+  >
+    Close
+  </button>
+</div>
