@@ -17,7 +17,7 @@ export class ServiceModalComponent {
     ['gas_dist', {
       head: 'Gas Distribution System',
       body : 'Assured Integrity Of Gas Quality Will Be Maintained For Your Gas Distribution System. We Have Laid Such Systems For Automobile Industries & Electronic Industries. So Far We Have Laid A Pipe Line Of More Than 1 Lakh Metress',
-      image: '../../assets/img/portfolio-2.jpg'
+      image: 'assets/img/portfolio-2.jpg'
     }],
     ['cascade', {
       head: 'Cascade',
